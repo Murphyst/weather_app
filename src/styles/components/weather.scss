@@ -1,0 +1,52 @@
+.weatherContainer {
+  margin-top: 25px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: stretch;
+  color: $colors;
+  border-bottom: 1px solid $line-colors;
+  margin-bottom: 20px;
+  .min,
+  .max {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+  .max {
+    margin-top: -105px;
+  }
+  .min {
+    margin-top: 10px;
+  }
+
+  .cityName {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .weather {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12rem;
+    top: -20px;
+  }
+  .weatherDesc {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    font-size: 1.5rem;
+    margin: 10px 0 0 10px;
+
+    img {
+      align-self: flex-start;
+      width: 40px;
+      height: 40px;
+      filter: grayscale(100%);
+    }
+  }
+  .degree {
+    font-size: 12rem;
+    margin-left: -10px;
+  }
+}

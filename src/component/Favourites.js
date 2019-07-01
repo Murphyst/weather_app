@@ -1,14 +1,19 @@
 import React from "react";
 import Fav from "./Fav";
-import { FaHeart } from "react-icons/fa";
 
 export default props => (
-  <div>
-    <button onClick={props.handleFav}>
-      <FaHeart />
-    </button>
-    {props.favs.map(fav => (
-      <Fav key={fav} favText={fav} handleDeleteFav={props.handleDeleteFav} />
-    ))}
+  <div className={"fav-wrapper"}>
+    {!(props.favs > -1) && (
+      <div className={"favourites"}>
+        {props.favs.map(fav => (
+          <Fav
+            handleShowFav={props.handleShowFav}
+            key={fav}
+            favText={fav}
+            handleDeleteFav={props.handleDeleteFav}
+          />
+        ))}
+      </div>
+    )}
   </div>
 );

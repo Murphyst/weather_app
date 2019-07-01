@@ -1,0 +1,15 @@
+@import "./base/settings.scss";
+@import "./components/container";
+@import "./components/city-form";
+@import "./components/favourites.scss";
+@import "./components/weather.scss";
+@import "./components/favourites.scss";
+@import "./base/base";
+@import "./components/time-loc-fav.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|B612+Mono|Dosis|Open+Sans+Condensed:300|Rajdhani|Saira+Semi+Condensed|Titillium+Web&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Saira Semi Condensed", sans-serif;
+}

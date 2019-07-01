@@ -1,0 +1,29 @@
+.get-time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.9rem;
+  color: $colors;
+  margin-top: 20px;
+
+  .fav-button {
+    color: $colors;
+    font-size: 1.5rem;
+    outline: none;
+
+    &:hover {
+      color: royalblue;
+      cursor: pointer;
+    }
+  }
+  .timer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .clock {
+      margin: 5px 5px 0 0;
+      font-size: 1.7rem;
+    }
+  }
+}

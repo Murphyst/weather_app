@@ -1,0 +1,62 @@
+.favourites {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  margin: 8px 0;
+  // border: 0.3px solid $colors;
+  outline: none;
+  color: $colors;
+  user-select: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  .fav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px;
+    background-color: transparent;
+    color: $colors;
+    user-select: none;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+
+    &:hover {
+      color: black;
+    }
+    .fav-button {
+      font-size: 4vh;
+      background-color: transparent;
+      color: $colors;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        color: bisque;
+      }
+    }
+  }
+
+  &:hover {
+    p {
+      color: whitesmoke;
+    }
+    cursor: pointer;
+    border-color: whitesmoke;
+  }
+}
+
+.fav-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  // border-bottom: 1px solid $line-colors;
+  padding-bottom: 20px;
+}

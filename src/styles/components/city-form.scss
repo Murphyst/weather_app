@@ -1,0 +1,65 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid $line-colors;
+  padding-bottom: 5px;
+}
+
+.input {
+  height: 40px;
+  background-color: white;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.2;
+  -webkit-box-shadow: 0 3px 10px #212121;
+  &:hover {
+    opacity: 0.8;
+  }
+  &::placeholder {
+    color: red;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: red;
+  }
+}
+
+.button {
+  background-color: transparent;
+  width: 40%;
+  height: 40px;
+  margin: 8px 0;
+  border: 0.3px solid $colors;
+  outline: none;
+  -webkit-box-shadow: 0 3px 10px #212121;
+
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    color: $colors;
+    user-select: none;
+    margin: 0;
+  }
+
+  &:hover {
+    p {
+      color: beige;
+    }
+    cursor: pointer;
+    border-color: beige;
+  }
+
+  &:after {
+    content: "";
+  }
+  .button :disabled {
+    color: gray;
+    cursor: not-allowed;
+  }
+}
