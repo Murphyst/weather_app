@@ -20,7 +20,7 @@
     "css-loader": "^3.0.0",
     "downshift": "^3.2.10",
     "fetch": "^1.1.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
